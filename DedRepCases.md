@@ -132,6 +132,16 @@ The fact that Bob is correct is easily checkable by examining the terms
 of C. Consequently, Carol could conclude that while Alice may be trusted
 to pay her debts, she cannot be trusted to keep information private.
 
+Update: There is a problem with this case. A third party Ernie could publish
+
+"Ernie believes Alice paid Bob 1 bitcoin, fulfilling C."
+
+This would also reveal the details of the contract, but the responsibility
+would not fall on Alice or Bob. It is possible that Ernie is a Sybil for
+either Alice or Bob, but there is no way to know which. It is also possible
+that Ernie really is a third party that compromised Alice and Bob's negotiations
+regarding the contract C.
+
 Case 2. Suppose Alice has not paid Bob the 1 bitcoin. There is a dispute which should
 supersede the fact that the contract should remain closed. In this case,
 Bob is allowed to openly sign and publish an accusation that Alice did not pay.
@@ -163,6 +173,10 @@ even publish that they have agreed to hash(C) unless there is a
 dispute. Both have signed copies of C, so that if either one publishes
 that there was an agreement, the other can publish C indicating that
 there was a breach of C.
+
+Update: There is a similar problem here as there was in Example 2.
+An apparent third party could publish the details of C
+and it would not be clear who to hold responsible for this.
 
 Example 4: A Fiat/Crypto Option
 -------------------------------
